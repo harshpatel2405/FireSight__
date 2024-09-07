@@ -1,14 +1,26 @@
-// src/pages/Home.js
 import React from 'react';
-import './Home.css';
+import { Link } from 'react-router-dom';
+import './Home.css'; 
 
-const Home = () => {
+console.log('Loading');
+
+const HomePage = () => {
   return (
-    <div className="home-container">
-      <h1>Welcome to FireSight</h1>
-      <p>Your one-stop solution for fire extinguisher management.</p>
+    <div className="home-page">
+      <nav className="navbar">
+        <div className="logo">FireSight</div>
+        <div className="nav-links">
+          <Link to="/login" className="nav-link">Log In</Link>
+          <Link to="/contact" className="nav-link">Contact Us</Link>
+        </div>
+      </nav>
+      <main className="main-content">
+        <h1>Welcome to FireSight</h1>
+        <p>Your safety, our priority. Apply now to ensure fire safety compliance.</p>
+        <Link to="/signup" className="apply-button">Apply Now</Link>
+      </main>
     </div>
   );
 };
 
-export default Home;
+export default HomePage;

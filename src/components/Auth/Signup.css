@@ -1,0 +1,116 @@
+/* Global container for signup page */
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+
+/* Navbar Styling */
+.navbar {
+    width: 100%;
+    background-color: #d32f2f; /* Red background for navbar */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space below the navbar */
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.home-btn {
+    background-color: white;
+    color: #d32f2f;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+.home-btn:hover {
+    background-color: #b71c1c;
+    color: white;
+}
+
+/* Signup form styling */
+.signup-box {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    margin-top: 120px;
+}
+
+h2 {
+    color: #d32f2f;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 20px;
+    color: #d32f2f;
+}
+
+/* Input group styling */
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input.error-input {
+    border-color: red;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Button styling */
+.signup-btn {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.signup-btn:hover {
+    background-color: #b71c1c;
+}
