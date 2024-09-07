@@ -1,0 +1,134 @@
+/* Global container for login page */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    background-color: white;
+    padding: 0 20px;
+}
+
+/* Navbar Styling */
+.navbar {
+    width: 100%;
+    background-color: #d32f2f; /* Red background for navbar */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.home-btn {
+    background-color: white;
+    color: #d32f2f;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    position: relative;
+    right: 100px;
+}
+
+.home-btn:hover {
+    background-color: #b71c1c;
+    color: white;
+}
+
+/* Login form styling */
+.login-box {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin-top: 80px; /* Add margin to avoid navbar overlap */
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #d32f2f; /* Red color for heading */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Input fields */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Error input border */
+input.error-input {
+    border: 1px solid #d32f2f;
+}
+
+/* Error message */
+.error {
+    color: #d32f2f;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Submit button */
+.login-btn {
+    background-color: #d32f2f; /* Red button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #b71c1c; /* Darker red on hover */
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    .login-box {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .home-btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}

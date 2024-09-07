@@ -1,12 +1,14 @@
-// src/index.js
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
-import App from './App';
+import ReactDOM from 'react-dom/client';
+import App from './App'; // Importing the App component
 
-ReactDOM.render(
-  <Router>
+
+// Create a root element to mount the React app
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// Render the App component inside the root div
+root.render(
+  <React.StrictMode>
     <App />
-  </Router>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
